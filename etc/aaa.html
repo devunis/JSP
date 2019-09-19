@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>회원가입페이지</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <form action="JoinMemberProc.html" method="post">
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">이메일 주소</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="id" placeholder="이메일을 입력하세요" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">암호</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="pwd" placeholder="암호" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword2">암호 확인</label>
+          <input type="password" class="form-control" id="exampleInputPassword2" name="pwd2" placeholder="재입력하세요" required>
+        </div>
+        <div class="form-group">
+          <div class="form-group checkbox" name="area">
+            <label><input type="radio" name= "a" value=""> 서울 </label>
+            <label><input type="radio" name= "a" value=""> 대전 </label>
+            <label><input type="radio" name= "a" value=""> 대구 </label>
+            <label><input type="radio" name= "a" value=""> 부산 </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Comment">Comment</label>
+          <textarea class="form-control" rows="3" id="Comment" name="comment"></textarea>
+        </div>
+
+          <button type="submit" class="btn btn-default">제출</button>
+      </form>
+
+    </div>
+
+  </body>
+</html>
